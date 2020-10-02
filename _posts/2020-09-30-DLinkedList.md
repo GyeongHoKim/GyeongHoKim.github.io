@@ -4,6 +4,7 @@ excerpt: "더미연결리스트의 구현"
 last_modified_at: 2020-09-30T18:50:00+09:00
 categories: dataStructure
 toc: true
+toc_sticky: true
 ---
 
 # 연결리스트
