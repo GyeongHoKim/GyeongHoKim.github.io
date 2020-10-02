@@ -1,3 +1,4 @@
+# Front Matter
 ---
 title: "자료구조론 목차"
 excerpt: "더미연결리스트의 구현"
