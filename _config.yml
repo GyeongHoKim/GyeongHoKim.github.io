@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "김경호"
   avatar           : "/assets/images/algorithm/sonic.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am very **something**"
+  bio              : "I am really **something**"
   location         : "Republic of Korea"
   email            : "rlarudgh2017@gmail.com"
   links:
