@@ -1,6 +1,6 @@
 ---
 title: "자료구조론 목차"
-excerpt: "더미연결리스트의 구현"
+excerpt: "자료구조론 연재 시작"
 last_modified_at: 2020-09-30T18:38:13+09:00
 categories: dataStructure
 ---
