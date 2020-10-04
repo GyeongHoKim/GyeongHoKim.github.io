@@ -1,7 +1,7 @@
 ---
 title: "[자료구조론/C]자료구조론 2편 원형연결리스트"
 excerpt: "원형연결리스트의 C 구현"
-last_modified_at: 2020-09-30T18:50:00+09:00
+last_modified_at: 2020-10-04T18:45:00+09:00
 categories: dataStructure
 toc: true
 toc_sticky: true
@@ -10,7 +10,7 @@ author_profile: false
 # 원형연결리스트
 
 가장 뒤의 노드가 가장 앞의 노드를 가리킨다.
-![CLinkedList](../assets/images/dataStructure/CLinkedList.jpeg)
+![CLinkedList](../assets/images/CLinkedList/CLinkedList.jpg)
 
 원형연결리스트의 경우, 마지막 노드를 가리키는 포인터 tail만 쓰는데, 어차피 tail이 가리키는 노드의 다음 노드가 head가 가리키는 노드이므로 head를 tail->next로 표현할 수 있기 때문이다.
 
