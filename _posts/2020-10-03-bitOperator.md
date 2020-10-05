@@ -3,7 +3,7 @@ title: "[Embedded/C]비트연산자, 매크로"
 excerpt: "마이크로컨트롤러에서 자주 사용하는 비트연산자와 비트매크로 함수"
 last_modified_at: 2020-10-03T20:03:00+09:00
 categories: embedded
-tag: ATmega128
+tag: ['ATmega128', 'avr']
 toc: true
 toc_sticky: true
 author_profile: false
