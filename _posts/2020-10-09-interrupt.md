@@ -45,8 +45,8 @@ int main(void)
 
 ## 인터럽트 벡터 테이블
 
-![interruptTable1](../_posts/images/Embedded/atmega128InterruptTable1.jpg)
-![interruptTable2](../_posts/images/Embedded/atmega128InterruptTable2.jpg)
+![interruptTable1](https://github.com/GyeongHoKim/GyeongHoKim.github.io/blob/master/assets/images/Embedded/atmega128InterruptTable1.jpg)
+![interruptTable2](https://github.com/GyeongHoKim/GyeongHoKim.github.io/blob/master/assets/images/Embedded/atmega128InterruptTable2.jpg)
 
 위는 ATmega128의 데이타시트에 나와있는 인터럽트 벡터 테이블이다. 마찬가지로 각 AVR 데이타시트를 확인해보면 위와 같은 테이블이 있을 것이다.
 

@@ -10,7 +10,7 @@ categories: dataStructure
 군대에 있는 동안 몬가...몬가를 해야겠다는 생각이 들었다.  
 그래서 **C언어로 구현한 자료구조**를 연재해보려고 한다.  
 마크다운 언어도 연습할 겸..  
-![dataStructureMain](../_posts/images/dataStructure.jpg)
+![dataStructureMain](https://github.com/GyeongHoKim/GyeongHoKim.github.io/blob/master/assets/images/datastructure.jpg)
 
 ---
 * LinkedList

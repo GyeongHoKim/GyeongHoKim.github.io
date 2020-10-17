@@ -13,7 +13,7 @@ toc_sticky: true
 
 ## 연결리스트 ADT
 
-![LinkedList](../_posts/images/DLinkedList/LinkedList.jpeg)
+![LinkedList](https://github.com/GyeongHoKim/GyeongHoKim.github.io/blob/master/assets/images/DLinkedList/LinkedList.jpeg)
 
 	자료와 주소값을 저장할 수 있는 노드를 단위로 하여 만든 연속적인 배열
 
@@ -88,7 +88,7 @@ void ListInit(List* plist)
 }
 ```
 
-![DListInit](../_posts/images/DLinkedList/Init.jpeg)  
+![DListInit](https://github.com/GyeongHoKim/GyeongHoKim.github.io/blob/master/assets/images/DLinkedList/Init.jpeg)  
     1. plist라는 변수는 앞서 정의한 List형의 변수 주소를 가지고 있다. List 구조체에서 head멤버는 첫번째 노드를 가리키는 포인터 변수이다. malloc함수로 Node만큼의 크기를 동적할당한 후 그 첫주소를 (List*)형으로 타입캐스팅한 값을 대입하게 된다.
 	2. 이렇게 만든 더미 노드에 다음 노드 주소값을 NULL로 한다.
 	3. Insert시 comp가 가리키는 함수를 사용하여 정렬삽입하게 되는데 일단 NULL하고 이후 SetSortRule함수로 정한다.
@@ -127,7 +127,7 @@ void FInsert(List* plist, LData data)
 여기서 눈여겨 보아야 할 점은, newNode의 값들을 먼저 초기화 시키고 나중에 원래 연결리스트의 값들을 조정한다는 것이다.
 
 만약 newNode가 아니라 plist->head->next = newNode 코드가 앞섰다면,  
-![ifNotNewFirst](../_posts/DLinkedList/ifNotNewFirst.jpeg)  
+![ifNotNewFirst](https://github.com/GyeongHoKim/GyeongHoKim.github.io/blob/master/assets/images/DLinkedList/ifNotNewFirst.jpeg)  
 원래의 정보를 잃게 된다.  
 꼭 연결리스트가 아니더라도 삽입을 진행할 때는 새로운 노드의 값을 먼저 초기화해야 한다.
 
