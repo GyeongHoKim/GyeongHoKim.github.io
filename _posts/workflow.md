@@ -38,3 +38,15 @@ progit에 대표적인 3가지 방법이 소개되어있는데, 이 글에서는
 ## Integration-Manager 워크플로
 
 각 팀마다 브랜치를 하나씩 만들고 Integration-Manager가 그 브랜치를 Pull해서 Merge하는 워크플로이다.
+
+가령 철수와 영희가 A라는 한 팀, 영희와 바둑이가 B라는 한 팀으로 일한다고 하면 각각의 팀은 featureA, featureB라는 브랜치를 각각 만들게 될 것이다.
+영희가 저장소를 clone하고 featureA브랜치를 만들어 먼저 수정하고 커밋한다. 그러면 수정부분을 철수와 공유해야 하므로 featureA브랜치를 서버로 Push한 후, 철수에게 featureA브랜치를 확인하라고 메일을 보내야 한다.
+그러는 동안, 바둑이가 featureB브랜치를 만들고 수정했다는 메일을 받았다. 영희는 서버로부터 fetch, merge해야 한다.
+시간이 지난 후, featureA와 featureB 브랜치가 master 브랜치로 merge될 준비가 되었다. 그러면, Integration-manager에게 그 사실을 알려준다. Integration-manager는 각 브랜치를 검토하고 master브랜치에 통합할 것이다.
+
+## Dictator and Lieutenants 워크플로
+
+공개 팀을 운영할 때는 모든 개발자가 프로젝트의 공유 저장소에 직접적으로 쓰기 권한을 가지지 않는다. Github의 경우, Fork를 지원하나 다른 방식으로는 이메일과 Patch를 사용하는 방식도 있다.
+
+Github사이트의 해당 프로젝트 페이지로 가서 Fork버튼을 누르면 쓰기 권한이 있는 저장소가 하나 만들어질 것이다. 이 저장소를 원격저장소로 등록한 뒤 토픽 브랜치를 만들어 작업할 때마다 이 리모트 토픽 브랜치 자체에 바로 Push를 해야 한다. 이렇게 하면 관리자가 토픽 브랜치를 프로젝트에 포함시키고 싶지 않을 때 master브랜치를 이전으로 되돌리는 수고를 덜어줄 수 있다.
+Fork한 저장소에 Push하고 준비가 되면 프로젝트 관리자에게 Pull Request해야 한다. Github에 pull request버튼을 누르거나 `$git request-pull`명령어를 사용하여 이메일을 수동으로 만들 수 있다.
