@@ -4,6 +4,8 @@ STL 컨테이너는 시퀀스 컨테이너와 연관 컨테이너로 나눌 수 
 
 # vector
 
+## vector의 주요 인터페이스
+
 | 템플릿 형식 |
 | :---: |
 | `template<typename T, typename Allocator = allocator<T>> class vector` |
@@ -39,4 +41,40 @@ T는 vector 컨테이너 원소의 형식이고, 할당자는 디폴트가 `allo
 | `v.pop_back()` | v의 마지막 원소 제거 |
 | `v.push_back(x)` | v의 끝에 x를 추가 |
 | `p = v.rbegin()` | p는 v의 역 순차열의 첫 원소를 가리키는 반복자(const, non const version exist) |
-| `p = v.rend()` | p는 v의 역 순차열의 끝을 표식하는 반복자(const, non const version exist)
+| `p = v.rend()` | p는 v의 역 순차열의 끝을 표식하는 반복자(const, non const version exist) |
+| `v.reserve(n)` | n개의 원소를 저장할 공간을 예약한다 |
+| `v.resize(n)` | v의 크기를 n으로 변경하고 확장되는 공간의 값을 기본값으로 초기화 |
+| `v.resize(n, x)` | v의 크기를 n으로 변경하고 확장되는 공간의 값을 x값으로 초기화 |
+| `v.size()` | v 원소의 개수 |
+| `v.swap(v2)` | v와 v2를 swap한다 |
+
+| 연산자 |
+| :---: | :---: |
+| `v1 == v2` | v1과 v2의 모든 원소가 같은가(bool) |
+| `v1 != v2` | v1과 v2의 모든 원소 중 하나라도 다른 원소가 있는가(bool) |
+| `v1 < v2` | 문자열 비교처럼 v2가 v1보다 큰가(bool) |
+| `v1 <= v2`| 생략 |
+| `v1 > v2` | 생략 |
+| `v1 >= v2` | 생략 |
+| `v[i]` | v의 i번째 원소를 참조(const, 비 const 버전이 있고 범위점검이 없음 |
+
+멤버 형식의 종류
+
+* alloator_type
+* const_iterator
+* const_pointer
+* const_reference
+* const_reverse_iterator
+* difference_type
+* iterator
+* pointer
+* reference
+* reverse_iterator
+* size_type
+* value_type
+
+## 메모리 확장 정책
+
+컴파일러마다 조금씩 다르지만 대부분 (이전 capacity) + (이전 capacity / 2)를 만족한다.
+가령, 원소가 6개 들어있는 vector<int> 컨테이너에 push_back(n)을 하면 capacity를 9로 재할당하여 원소들을 복사한다.
+참고로 capacity()는 vector 컨테이너만 제공한다.
