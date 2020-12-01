@@ -1,3 +1,12 @@
+---
+title: "[STL/C++]시퀀스 컨테이너"
+excerpt: "C++ STL 시퀀스 컨테이너"
+last_modified_at: 2020-12-01T23:07:00+09:00
+categories: STL
+toc: true
+toc_sticky: true
+---
+
 # 내가 보려고 만든 C++ STL 정리 - Sequence Container
 
 STL 컨테이너는 시퀀스 컨테이너와 연관 컨테이너로 나눌 수 있다. 표준 시퀀스 컨테이너는 vector, list, deque이다.
