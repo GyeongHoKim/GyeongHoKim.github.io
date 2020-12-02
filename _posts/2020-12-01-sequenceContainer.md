@@ -1,6 +1,6 @@
 ---
 title: "[STL/C++]시퀀스 컨테이너"
-excerpt: "C++ STL 시퀀스 컨테이너"
+excerpt: "내가 보려고 만든 C++ STL 시퀀스 컨테이너"
 last_modified_at: 2020-12-01T23:07:00+09:00
 categories: STL
 toc: true
