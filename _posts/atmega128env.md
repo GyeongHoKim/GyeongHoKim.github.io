@@ -1,3 +1,14 @@
+---
+title: "[임베디드/개발환경]우분투로 ATmega128 개발환경을 조성해 보자"
+excerpt: ""avr-gcc, avrdude 등을 이용하여 ATmega128 개발"
+last_modified_at: 2020-12-03T01:13:00+09:00
+categories: embedded
+tag: ['ATmega128','avr']
+toc: true
+toc_sticky: true
+author_profile: false
+---
+
 # 우분투 atmega128 개발 환경설정
 
 avr 개발을 마음먹고 책 몇 권을 사봤으나 전부 윈도우 환경에서 진행하는 것 밖에 나와있지 않고, 한국에서 판매되는 프로그래머나 개발 보드의 안내서에도 윈도우 환경의 ATmel studio 툴에서 실행하는 방법만 나와있다.~~리눅스 혐오를 멈춰주세요~~ 한국에서 판매하는 제품을 가지고 우분투에서 개발환경을 조성해 보자.
@@ -64,3 +75,41 @@ int main()
 ## makefile 작성
 
 C언어로 짠 소스코드는 사람밖에 이해하지 못한다. 마이크로컨트롤러가 이해하게 하려면 플레시 메모리에 hex파일을 구워줘야 한다.
+
+``` Makefile
+FILENAME = blink
+PORT = /dev/ttyACM0
+DEVICE = atmega128
+PROGRAMMER = avrisp2
+BAUD = 9600
+F_CPU = 16000000UL
+COMPILE = avr-gcc -Wall -Os -DF_CPU=${F_CPU} -mmcu=${DEVICE}
+
+default: compile upload clean
+
+compile: 
+	${COMPILE} -c ${FILENAME}.c -o ${FILENAME}.o
+	${COMPILE} -o ${FILENAME}.elf ${FILENAME}.o
+	avr-objcopy -j .text -j .data -O ihex ${FILENAME}.elf ${FILENAME}.hex
+	avr-size --format=avr --mcu=${DEVICE} ${FILENAME}.elf
+
+upload:
+	avrdude -v -p ${DEVICE} -c ${PROGRAMMER} -P ${PORT} -b ${BAUD} -U flash:w:${FILENAME}.hex:i
+
+clean:
+	rm ${FILENAME}.o
+	rm ${FILENAME}.elf
+	rm ${FILENAME}.hex
+```
+
+makefile에 들어갈 내용은 총 세 가지인데 컴파일, 업로드, 그리고 클린이다.
+컴파일은 avr-gcc 컴파일러로 진행하고 avr-objcpy로 elf파일의 text와 dat부분만 빼와서 hex파일을 만든다.
+업로드 부분에서는 avrdude를 이용해 디바이스의 플레시 메모리에 hex파일을 굽는다.
+clea은 그냥 불필요한 파일을 없애주는 것이다.
+
+사진에서 등장했던 준비물로 개발한다면 device와 programmer를 바꿀 필요가 없을 것이다. port의 경우 `$dmesg | greptty`해보면 나온다.
+`$make`후, 성공적으로 업로드 했다면, LED가 깜빡일 것이다.
+
+![atmegaBlink](../assets/images/atmegaBlink.jpg)
+
+끝
