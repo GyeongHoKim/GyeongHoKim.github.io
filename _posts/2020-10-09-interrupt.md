@@ -1,5 +1,5 @@
 ---
-title: "[임베디드/C]AVR에서 인터럽트(Interrupt)방식 사용하기"
+title: "[임베디드/C] AVR에서 인터럽트(Interrupt)방식 사용하기"
 excerpt: "ATmega128에서 구현하는 인터럽트 방식 프로그래밍"
 last_modified_at: 2020-10-09T18:39:00+09:00
 categories: embedded

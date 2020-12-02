@@ -1,5 +1,5 @@
 ---
-title: "[임베디드/C]유저 어플리케이션 작성하기"
+title: "[임베디드/C] 유저 어플리케이션 작성하기"
 excerpt: "디바이스 드라이버 만들기 세번째"
 last_modified_at: 2020-10-06T20:55:00+09:00
 categories: embedded

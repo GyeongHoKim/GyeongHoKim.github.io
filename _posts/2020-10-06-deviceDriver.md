@@ -1,5 +1,5 @@
 ---
-title: "[임베디드/C]디바이스 드라이버 작성하기"
+title: "[임베디드/C] 디바이스 드라이버 작성하기"
 excerpt: "디바이스 드라이버 만들기 두번째"
 last_modified_at: 2020-10-06T18:30:00+09:00
 categories: embedded

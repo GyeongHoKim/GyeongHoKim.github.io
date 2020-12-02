@@ -1,5 +1,5 @@
 ---
-title: "[자료구조론/C]자료구조론 2편 원형연결리스트"
+title: "[자료구조론/C] 자료구조론 2편 원형연결리스트"
 excerpt: "원형연결리스트의 C 구현"
 last_modified_at: 2020-10-04T18:45:00+09:00
 categories: dataStructure

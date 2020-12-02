@@ -1,5 +1,5 @@
 ---
-title: "[자료구조론/C]자료구조론 1편 더미연결리스트"
+title: "[자료구조론/C] 자료구조론 1편 더미연결리스트"
 excerpt: "더미연결리스트의 C 구현"
 last_modified_at: 2020-09-30T18:50:00+09:00
 categories: dataStructure

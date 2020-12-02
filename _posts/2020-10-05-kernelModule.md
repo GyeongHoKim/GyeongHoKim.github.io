@@ -1,5 +1,5 @@
 ---
-title: "[임베디드/C]커널 모듈 프로그래밍의 기초"
+title: "[임베디드/C] 커널 모듈 프로그래밍의 기초"
 excerpt: "디바이스 드라이버 만들기 첫번째"
 last_modified_at: 2020-10-05T20:45:00+09:00
 categories: embedded
