@@ -1,7 +1,7 @@
 ---
 title: "[STL/C++] 연관 컨테이너"
 excerpt: "내가 보려고 만든 C++ STL 연관 컨테이너"
-last_modified_at: 2020-12-02T20:55:00+09:00
+last_modified_at: 2020-12-03T22:55:00+09:00
 categories: STL
 toc: true
 toc_sticky: true
@@ -75,3 +75,17 @@ toc_sticky: true
 * size_type
 * value_compare
 * value_type
+
+## multiset 컨테이너
+
+원소를 중복으로 넣을 수 있다는 점을 빼면 set과 동일하다.
+
+## map 컨테이너
+
+key와 value를 함께 저장하는 컨테이너, set과 동일한 인터페이스를 가진다. key는 유일하다.
+
+## multimap 컨테이너
+
+map과 동일 중복 key가능
+
+끝
