@@ -81,3 +81,20 @@ toc_sticky: true
 | `p=unique(b,e,f)` | 구간의 순차열을 `f(*p)`가 참인 인접한 중복 원소가 남지 않게 덮어쓰기로 이동한다. 알고리즘 수행 후 순차열은 [b,p)가 된다 |
 | `p=unique_copy(b,e,t)` | 구간의 순차열에서 인접한 중복 원소가 아닌 원소를 두 번째 순차열에 복사한다 |
 | `p=unique_copy(b,e,t,f)` | 구간의 순차열에서 `f(*p)`가 참인 인접한 중복 원소가 아닌 원소를 두 번째 순차열에 복사한다 |
+
+# 변경 알고리즘
+
+| 알고리즘 | 설명(p는 구간 [b,e)의 반복자) |
+| :---: | :---: |
+| `bool = next_permutation(b,e)` | 구간의 순차열을 사전순 다음 순열이 되게 한다. 마지막 순열이라면 bool은 false |
+| `bool = next_permutation(b,e,f)` | 구간의 순차열을 사전순 다음 순열이 되게 한다. 비교에 f를 사용, 마지막 순열일 경우 bool은 false |
+| `bool = prev_permutation(b,e)` | 구간의 순차열을 사전순 이전 순열이 되게 한다. 첫 순열일 경우 bool은 false |
+| `bool = prev_permutation(b,e,f)` | r구간의 순차열을 사전순 이전 순열이 되게 한다. 비교에 f를 사용, 첫 순열일 경우 bool은 false |
+| `p = partition(b,e,f)` | 구간의 순차열 중 `f(*p)`가 참인 원소는 [b,p)의 순차열에, 거짓인 원소는 [p,e)의 순차열로 분류한다 |
+| `random_shuffle(b,e)` | 구간의 순차열을 랜덤으로 뒤섞는다 |
+| `random_shuffle(b,e,f)` | 구간의 순차열을 f를 랜덤기로 하여 뒤섞는다 |
+| `reverse(b,e)` | 구간의 순차열을 뒤집는다 |
+| `p = reverse_copy(b,e,f)` | 구간의 순차열을 뒤집어 목적지 순차열 [t,p)에 복사 |
+| `rotate(b,m,e)` | 구간의 순차열을 왼쪽으로 회전한다 |
+| `p = rotate_copy(b,m,e,t)` | 구간의 순차열을 왼쪽으로 회전시켜 목적지 순차열에 복사 |
+| `stable_partition(b,e,f)` | partition알고리즘과 같고 원소의 상대적 순서를 유지 |
