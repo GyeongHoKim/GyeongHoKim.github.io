@@ -7,6 +7,12 @@ toc: true
 toc_sticky: true
 ---
 
+# STL algorithm container
+
+stl의 알고리즘 컨테이너는 크게 7가지로 나뉜다.
+각 알고리즘들에 대한 설명은 [여기](https://github.com/GyeongHoKim/algorithm) 
+알고리즘 관련된 것들을 정리하는 내 깃허브 리포지토리에 있다.
+
 # 원소를 수정하지 않는 알고리즘
 
 적으면서 외우자!
@@ -42,9 +48,6 @@ toc_sticky: true
 | `p = search(b,e,b2,e2,f)` | p는 첫 번째 구간의 순차열 중 두 번째 구간의 순차열과 f가 적용되는 순차열 첫 원소의 반복자 |
 | `p = search_n(b,e,n,x)` | p는 구간의 원소 중 x값이 n개 연속한 첫 원소의 반복자 |
 | `p = search_n(b,e,n,x,f)` | p는 구간의 원소 중 `f(*p,x)`가 참인 값이 n개 연속한 첫 원소의 반복자 |
-
-각 알고리즘들에 대한 설명은 [여기](https://github.com/GyeongHoKim/algorithm) 
-알고리즘 관련된 것들을 정리하는 내 깃허브 리포지토리에 있다.
 
 # 원소를 수정하는 알고리즘
 
@@ -124,6 +127,8 @@ toc_sticky: true
 
 # 정렬된 범위 알고리즘
 
+| 알고리즘 | 설명(p는 구간 [b,e)의 반복자) |
+| :---: | :---: |
 | `binary_search(b,e,x)` | 구간의 순차열에 x와 같은 원소가 있는가 |
 | `binary_search(b,e,x,f)` | 구간의 순차열에 x와 같은 원소가 있는가, f를 비교에 사용 |
 | `includes(b,e,b2,e2)` | 두 번째 구간의 모든 원소가 첫 번째 구간에도 있는가 |
@@ -148,6 +153,8 @@ toc_sticky: true
 
 # 수치 알고리즘
 
+| 알고리즘 | 설명(p는 구간 [b,e)의 반복자) |
+| :---: | :---: |
 | `x2 = accumulate(b,e,x)` | x2는 x를 초깃값으로 시작한 구간[b,e) 순차열 원소의 합 |
 | `x2 = accumulate(b,e,x,f)` | x2는 x를 초깃값으로 시작한 구간[b,e) 순차열 원소의 누적, f를 누적에 사용 |
 | `x2 = inner_product(b,e,b2,x)` | x2는 x를 초깃값으로 시작한 구간 [b,e)와 구간 [b2,,b2+e-b)의 내적이다 |
