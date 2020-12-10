@@ -1,7 +1,7 @@
 ---
 title: "[STL/C++] STL 알고리즘 컨테이너"
-excerpt: "내가 보려고 만든 C++ STL 알고리즘 컨테이너"
-last_modified_at: 2020-12-03T22:55:00+09:00
+excerpt: "내가 보려고 만든 C++ STL 알고리즘 컨테이너 목록"
+last_modified_at: 2020-12-10T21:51:00+09:00
 categories: STL
 toc: true
 toc_sticky: true
@@ -145,3 +145,16 @@ toc_sticky: true
 | `p = set_difference(b,e,b2,e2,t,f)` | 두 순차열의 차집합, [t,p)에 저장, f는 비교에 사용 |
 | `p = set_symmetric_difference(b,e,b2,e2,t)` | 두 구간의 순차열을 정렬된 대칭 차집합으로 [t,p)에 저장 |
 | `p = set_symmetric_difference(b,e,b2,e2,t,f)` | 두 구간의 순차열을 정렬된 대칭 차집합으로 [t,p)에 저장, f는 비교에 사용 |
+
+# 수치 알고리즘
+
+| `x2 = accumulate(b,e,x)` | x2는 x를 초깃값으로 시작한 구간[b,e) 순차열 원소의 합 |
+| `x2 = accumulate(b,e,x,f)` | x2는 x를 초깃값으로 시작한 구간[b,e) 순차열 원소의 누적, f를 누적에 사용 |
+| `x2 = inner_product(b,e,b2,x)` | x2는 x를 초깃값으로 시작한 구간 [b,e)와 구간 [b2,,b2+e-b)의 내적이다 |
+| `x2 = inner_product(b,e,b2,x,f1,f2)` | x2는 x를 초깃값으로 시작한 구간 [b,e)와 구간 [b2,,b2+e-b)의 모든 원소끼리 f2연산 후 f1연산으로 총 연산한 결과다 |
+| `p = adjaent_differene(b,e,t)` | 구간의 인접 원소와의 차를 두 번째 구간에 저장한다 |
+| `p = adjacent_difference(b,e,t,f)` | 구간의 인접 원소와의 차를 두 번째 구간에 저장한다, f를 연산에 사용 |
+| `p = partial_sum(b,e,t)` | 구간의 현재 원소까지의 합을 두 번째 구간에 저장한다 |
+| `p = partial_sum(b,e,t,f)` | 구간의 현재 원소까지의 연산을 두 번째 순차열에 저장한다. f를 연산에 사용한다 |
+
+끝
