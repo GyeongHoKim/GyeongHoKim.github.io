@@ -121,3 +121,27 @@ toc_sticky: true
 | `partial_sort(b,m,e,f)` | 힙 정렬을 기반으로 정렬 구간의 원소 중 m-b개 만큼의 상위 원소를 정렬, f는 조건자로 비교에 사용한다 |
 | `partial_sort_copy(b,e,b2,e2)` | 힙 정렬을 기반으로 정렬, 구간의 원소 중 e2-b2개의 원소만 정렬하여 복사한다 |
 | `partial_sort_copy(b,e,b2,e2,f)` | 힙 정렬을 기반으로 정렬, 구간의 원소 중 e2-b2개의 원소만 정렬하여 복사한다, f는 조건자로 비교에 사용한다 |
+
+# 정렬된 범위 알고리즘
+
+| `binary_search(b,e,x)` | 구간의 순차열에 x와 같은 원소가 있는가 |
+| `binary_search(b,e,x,f)` | 구간의 순차열에 x와 같은 원소가 있는가, f를 비교에 사용 |
+| `includes(b,e,b2,e2)` | 두 번째 구간의 모든 원소가 첫 번째 구간에도 있는가 |
+| `p = lower_bound(b,e,x)` | p는구간의 순차열에서 x와같은 첫 원소의 반복자 |
+| `p = lower_bound(b,e,x,f)` | p는구간의 순차열에서 x와같은 첫 원소의 반복자, f를 비교에 사용 |
+| `p = upper_bound(b,e,x)` | p는 구간의 순차열에서 x보다 큰 원소의 반복자 |
+| `p = upper_bound(b,e,x,f)` | p는 구간의 순차열에서 x보다 큰 원소의 반복자, f를 비교에 사용 |
+| `pair(p1,p2) = equal_range(b,e,x)` | 구간 [p1,p2)의 순차열은 구간의 순차열에서 x와같은 원소의 구간이다. [lower_bound(),upper_bound())의 순차열과 같다 |
+| `pair(p1,p2) = equal_range(b,e,x)` | 구간 [p1,p2)의 순차열은 구간의 순차열에서 x와같은 원소의 구간이다. [lower_bound(),upper_bound())의 순차열과 같다, f를 비교에 사용 |
+| `p = merge(b,e,b2,e2,t)` | 첫 번째 구간의 순차열과 두 번째 구간의 순차열을 합쳐 [t,p)에 저장 |
+| `p = merge(b,e,b2,e2,t,f)` | 첫 번째 구간의 순차열과 두 번째 구간의 순차열을 합쳐 [t,p)에 저장, f는 비교에 사용 |
+| `inplace_merge(b,m,e)` | 정렬된 [b,m)순차열과 [m,e)순차열을 [b,e)순차열로 합친다 |
+| `inplace_merge(b,m,e,f)` | 정렬된 [b,m)순차열과 [m,e)순차열을 [b,e)순차열로 합친다, f는 비교에 사용 |
+| `p = set_union(b,e,b2,e2,t)` | 두 순차열의 합집합, [t,p)에 저장 |
+| `p = set_union(b,e,b2,e2,t,f)` | 두 순차열의 합집합, [t,p)에 저장, f는 비교에 사용 |
+| `p = set_intersection(b,e,b2,e2,t)` | 두 순차열의 교집합, [t,p)에 저장 |
+| `p = set_intersection(b,e,b2,e2,t,f)` | 두 순차열의 교집합, [t,p)에 저장, f는 비교에 사용 |
+| `p = set_difference(b,e,b2,e2,t)` | 두 순차열의 차집합, [t,p)에 저장 |
+| `p = set_difference(b,e,b2,e2,t,f)` | 두 순차열의 차집합, [t,p)에 저장, f는 비교에 사용 |
+| `p = set_symmetric_difference(b,e,b2,e2,t)` | 두 구간의 순차열을 정렬된 대칭 차집합으로 [t,p)에 저장 |
+| `p = set_symmetric_difference(b,e,b2,e2,t,f)` | 두 구간의 순차열을 정렬된 대칭 차집합으로 [t,p)에 저장, f는 비교에 사용 |
