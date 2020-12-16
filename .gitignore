@@ -29,5 +29,5 @@ _asset_bundler_cache
 _site
 
 # cloud IDE
-.manifest
+goorm.manifest
 .theia/
