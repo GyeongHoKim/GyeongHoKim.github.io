@@ -52,5 +52,36 @@ int main()
 위 코드의 경우, turn_on_LED_in_PWM_manner함수가 cpu 클럭의 거의 대부분을 차지하게 되어 다른 작업을 할 수 있는 여지가 없어진다.
 하드웨어에 PWM 신호출력을 맡길 수가 있는데, ATmega128에도 아두이노처럼 PWM 신호출력을 파형 생성기에 맡길 수가 있다. 타이머/카운터에 비교일치 인터럽트가 생길 경우, 파형생성기를 통해 신호를 출력할 수가 있는데 이를 이용하면 된다.
 
-## 8비트 타이머/카운터의 PWM
+## 카운터를 이용한 LED 점멸 예제
 
+``` c
+#define F_CPU 16000000L
+#include <avr/io.h>
+#include <util/delay.h>
+
+int main()
+{
+	int dim = 0;
+	int direction = 1;
+	
+	DDRB |= (1 << PB4);
+	
+	TCCR0 |= (1 << WGM01) | (1 << WGM00);
+	
+	TCCR0 |= (1 << COM01);
+	
+	TCCR0 |= (1 << CS02) | (1 << CS01) | (1 << CS00);
+	
+	while(1) {
+		OCR0 = dim;
+		_delay_ms(10);
+		
+		dim += direction;
+		
+		if(dim == 0) direction = 1;
+		if(dim == 255) direction = -1;
+	}
+	
+	return 0;
+}
+```
