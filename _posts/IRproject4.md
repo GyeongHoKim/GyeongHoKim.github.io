@@ -13,7 +13,7 @@ CTC 모드로 설정한 타이머/카운터에 비교일치 인터럽트를 두 
 함수 내부에서 논리 0, 논리 1, 리드 코드의 경우를 따진다. 평소에는 OCR1A를 0로 두어 파형이 생성되지 않게 하고 출력이 시작 될 때, 34로 고치면 된다.  
 volatile int형 cnt 변수를 하나 선언하고 파형이 두 번 반복되었을 때 한 번 더 cnt를 1로 둬서 HIGH가 나오는 시기를 한 타임 늦추면 될 것 같다. 
 
-## 1번 타이머/카운터 설정
+## 논리 0과 논리 1 인코딩을 해보자
 
 ``` c
 // TCCR1A = _BV (WGM12); OCR1A  = 34; TIMSK1 = _BV (OCIE1A); TCCR1B =  _BV (CS21) | _BV (CS22); 해야 함
@@ -42,8 +42,10 @@ ISR(TIMER1_COMPA_vect)
 
 ISR(TIMERS1_COMPB_vect)
 {
-  PORTB ^= (1 << 5);
+  PORTB ^= (1 << 5); //PB5 is OC1A
 }
 ```
 
-oh, shit here we go again.
+## 리드코드를 인코딩 해보자.
+
+음 그건 내일 하자.
