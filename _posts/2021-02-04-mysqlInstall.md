@@ -24,7 +24,7 @@ I used **GCP SQL instance**
 1. make VM instance and DB instance at GCP
 2. make VM instance open for 3306 port(access for mysql-server)
 3. install mysql-client at VM instance
-4. `$ mysql -h 35.239.166.192 -P 3306 -u root -p`
+4. `$ mysql -h [your db ip] -P 3306 -u root -p`
 
 # Schema
 
