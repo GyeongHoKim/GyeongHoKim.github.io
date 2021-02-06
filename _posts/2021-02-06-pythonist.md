@@ -51,7 +51,8 @@ author_profile: false
     * 시퀀스 자료형에 차례대로 함수 적용하여 **통합**
     
 가령
-``` python
+
+```{.python}
 #example1 and example2 is same
 ex = [1, 2, 3, 4, 5]
 f = lambda x, y : x + y
@@ -61,6 +62,7 @@ example2 = [x + y for x, y in zip(ex, ex)]
 #if you want filter,
 list(map(lambda x : x ** 2 if x % 2 == 0 else x, ex))
 ```
+
 로 표현할 수 있다.
 
 끝
