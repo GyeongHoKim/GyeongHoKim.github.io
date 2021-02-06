@@ -51,7 +51,7 @@ author_profile: false
     * 시퀀스 자료형에 차례대로 함수 적용하여 **통합**
     
 가령
-``` python3
+``` python
 #example1 and example2 is same
 ex = [1, 2, 3, 4, 5]
 f = lambda x, y : x + y
