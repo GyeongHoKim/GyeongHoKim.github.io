@@ -52,7 +52,7 @@ author_profile: false
     
 가령
 
-```{.python}
+``` python
 #example1 and example2 is same
 ex = [1, 2, 3, 4, 5]
 f = lambda x, y : x + y
