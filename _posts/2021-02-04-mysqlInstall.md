@@ -1,6 +1,6 @@
 ---
-title: "[DB/SQL] DB environment and DB terms"
-excerpt: "mysql server and client & terms for RDBMS"
+title: "[DB/SQL] terminology of RDBMS"
+excerpt: "mysql setting & terms for RDBMS"
 last_modified_at: 2021-02-04T20:23:00+09:00
 categories: DB
 tag: ["DB", "mysql"]
@@ -40,5 +40,47 @@ you can group objects by logically.
 basic data storage units consisting of row(record, tuple) and column(field, item).
 
 ![table](https://2.bp.blogspot.com/-vnLOqePAUso/WsNiTU6dKyI/AAAAAAAAGDE/ZMNQTX-x3Ws8MTiDV5motp0ivXiVMB5ZACLcBGAs/s1600/table.png)
+
+## Relation
+
+Table that stores about one entity.
+
+## Attribute
+
+We call it field or column.
+
+## Tuple
+
+Rows
+
+## Degree
+
+Number of attributes
+
+## Cardinality
+
+Number of tuples
+
+## Domain
+
+Set of values that can be attributes
+
+## NULL
+
+Absence of Information
+
+# Data Types
+
+1. Numbers
+	* INTEGER(4BYTE)
+	* FLOAT(4BYTE)
+	* NUMBER(22BYTE)
+2. String
+	* CHAR(MAX TO 255BYTE)
+	* VARCHAR(MAX TO 65535BYTE)
+3. Date
+	* DATE(3BYTE)
+	* TIME(3BYTE)
+	* TIMESTAMP(4BYTE)
 
 The end
