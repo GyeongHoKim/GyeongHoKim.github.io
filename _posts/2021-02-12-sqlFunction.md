@@ -59,11 +59,11 @@ you can enter conditional statement in \<value>
 COALESCE (<value1>, <value2>, ... , <valueN>)
 ```
 
-if value1 is NULL, return value2.
-if value1 and value2 both NULL, return value3
+if value1 is NULL, return value2.  
+if value1 and value2 both NULL, return value3  
 .  
 .  
 .  
-if value1 ~ value(N-1) are NULL, return valueN
+if value1 ~ value(N-1) are NULL, return valueN  
 
 The End
