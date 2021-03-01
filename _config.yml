@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "김경호"
-  avatar           : "/assets/images/profile/FAicon.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile/no_background_profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am really **something**"
   location         : "Republic of Korea"
   email            : "rlarudgh2017@gmail.com"
