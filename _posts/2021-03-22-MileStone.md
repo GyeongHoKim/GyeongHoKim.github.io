@@ -9,6 +9,8 @@ toc_sticky: true
 author_profile: false
 ---
 
+<a id='L3KDrBrSQohuvHVUwHHo3w' class='gie-single' href='http://www.gettyimages.com/detail/1062824286' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'L3KDrBrSQohuvHVUwHHo3w',sig:'vlwszTa3QEehdC1t4EBnCaV2oZTjwPpSsSH80hxVjUw=',w:'509px',h:'339px',items:'1062824286',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+
 소마 떨어지니 의욕이 떨어지는게 실시간으로 느껴진다.
 이럴 때는 미래 계획을 세우고 비전을 만들면 의욕이 살아난다. 마침 전역도 얼마 안남았고, 이참에 계획을 세우자.
 
@@ -29,7 +31,7 @@ author_profile: false
 > * 6월 부스트 캠프  
 > * 7월 SCPC, UCPC 알고리즘 대회  
 > * 8월 카카오 블라인드 채용  
-> * 10월 우아한 테크코스
+> * 10월 우아한 테크코스  
 
 10월이면 어떻게든 될 것 같으니 올해는 우테코합격을 목표로 공부하자.
 
