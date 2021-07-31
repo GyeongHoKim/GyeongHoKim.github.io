@@ -38,7 +38,7 @@ author_profile: false
 
 라는 문단을 다시 가져와 보자.  
 
-![matrix system](/assets/systemEq.png)
+![matrix system](/assets/math/systemEq.png)
 
 고윳값을 구하는 식은 $$y = e^{\lambda x}$$ 를 때려넣어서 나온 방정식인 characteristic equation과 같다(제차인 경우에만 풀린다).  
 
